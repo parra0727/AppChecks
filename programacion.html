@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Proyecto de Trading y Programación</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="programacion.html">Programación</a></li>
+                <li><a href="trading.html">Trading</a></li>
+                <li><a href="ideas.html">Ideas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="tasks">
+            <h2>Tareas de la Semana</h2>
+            <p>Semana 1</p>
+            <div id="task-checkpoints">
+                <!-- Checkpoints se agregarán dinámicamente -->
+            </div>
+            <input type="text" id="task-input" placeholder="Nueva tarea...">
+            <button onclick="addTask()">Agregar Tarea</button>
+        </section>
+        <section id="progress">
+            <h2>Progreso Semanal</h2>
+            <div id="progress-bar"></div>
+        </section>
+        <section id="ideas">
+            <h2>Agregar Idea</h2>
+            <button onclick="toggleIdeasMenu()">Agregar Idea</button>
+            <div id="ideas-menu" style="display: none;">
+                <textarea id="idea-input" placeholder="Escribe tus ideas aquí..."></textarea>
+                <button onclick="addIdea()">Guardar Idea</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Proyecto de Trading y Programación</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
